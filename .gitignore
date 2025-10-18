@@ -1,0 +1,28 @@
+# Maven
+**/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Spring
+*.jar
+*.war
+*.ear
+
+
+*.kotlin_metadata
+
+.DS_Store
+Thumbs.db
+
+*.log
+*.bak
+*.swp
+*~.nib
+local.properties
+
+.mvn/wrapper/maven-wrapper.jar

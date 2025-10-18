@@ -1,0 +1,9 @@
+services:
+  db:
+    image: postgres:18-alpine
+    environment:
+      POSTGRES_DB: db_cabko
+      POSTGRES_USER: cabko
+      POSTGRES_PASSWORD: cabko
+    ports:
+      - "5432:5432"

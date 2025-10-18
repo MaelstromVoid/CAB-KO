@@ -1,0 +1,27 @@
+spring:
+  flyway:
+    enabled: true
+    schemas: sc_cabko
+    defaultSchema: sc_cabko
+    locations: classpath:db/migration
+    cleanDisabled: false # ENABLED FOR DEV, do NOT use in production
+    clean-on-migration-validation-error: true
+  docker:
+    compose:
+      enabled: true
+      file:
+        - ../docker-compose-postgreSQL.yml
+
+# 256 bit or more
+jwt:
+  secret: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+# Can be set to INFO or WARN
+logging:
+  level:
+    root: DEBUG
+    org:
+      springframework:
+        security: DEBUG
+        boot:
+          autoconfigure: DEBUG
