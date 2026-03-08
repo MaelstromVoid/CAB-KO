@@ -1,4 +1,10 @@
 spring:
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: always
+    include-exception: false
+
   flyway:
     enabled: true
     schemas: sc_cabko
@@ -6,6 +12,7 @@ spring:
     locations: classpath:db/migration
     cleanDisabled: false # ENABLED FOR DEV, do NOT use in production
     clean-on-migration-validation-error: true
+
   docker:
     compose:
       enabled: true
@@ -16,12 +23,18 @@ spring:
 jwt:
   secret: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
-# Can be set to INFO or WARN
 logging:
   level:
-    root: DEBUG
+    root: INFO
     org:
       springframework:
-        security: DEBUG
+        security: INFO
         boot:
-          autoconfigure: DEBUG
+          autoconfigure: INFO
+
+# Swagger
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true

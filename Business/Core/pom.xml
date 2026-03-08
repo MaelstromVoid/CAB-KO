@@ -6,7 +6,6 @@
 
     <name>1 - Core</name>
     <artifactId>cabko-core</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <parent>

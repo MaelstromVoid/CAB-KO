@@ -1,7 +1,6 @@
 package core.users.service
 
 import common.error.NotAuthorized
-import common.error.WhenOutForRange
 import core.users.entity.UserRole
 import core.users.model.AuthenticatedUser
 import core.users.service.data.RequestType
@@ -13,8 +12,6 @@ class ActionAuthorizationService {
             RequestType.ADD_PRODUCT,
             RequestType.UPDATE_PRODUCT,
             RequestType.DELETE_PRODUCT -> UserRole.ADMIN
-
-            else -> throw WhenOutForRange("Unsupported request type: $requestType")
         }
 
         if (!user.hasRole(requiredUserRole)) {

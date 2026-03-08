@@ -80,7 +80,7 @@ open class NotFoundError(message: String) : ApplicationError(message) // 404
  * <p>The global exception handler should translate instances of this class (and its
  * subclasses) to HTTP status <strong>409 Conflict</strong>.</p>
  */
-open class ConflitError(message: String) : ApplicationError(message) // 409
+open class ConflictError(message: String) : ApplicationError(message) // 409
 
 
 /**

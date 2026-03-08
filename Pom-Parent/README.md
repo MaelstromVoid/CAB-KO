@@ -25,12 +25,6 @@ pluginManagement entries so child modules can use commonly configured plugins (K
 
 Minimal "convention over configuration" so each module only contains module-specific code.
 
-## Adding a new module
-
-1) Create the module directory and its own pom.xml that sets this POM as ```<parent>```.
-2) Add the module artifactId to the ```<modules>``` section of the parent POM if you use the parent reactor build.
-3) Declare dependencies in the child POM (you generally do not need to provide versions if they are managed by the parent).
-
 ## Notes & best practices
 
 - Keep the parent focused on build configuration and version management, avoid leaking module-specific code or heavy runtime dependencies into the parent.

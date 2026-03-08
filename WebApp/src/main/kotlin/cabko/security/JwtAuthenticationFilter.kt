@@ -26,7 +26,7 @@ class JwtAuthenticationFilter(private val jwtTokenProvider: JwtTokenProvider) : 
                     authorities = userRoles.map { SimpleGrantedAuthority("ROLE_$it") },
                 )
                 SecurityContextHolder.getContext().authentication = auth
-            } catch (ex: Exception) {
+            } catch (_: Exception) {
                 SecurityContextHolder.clearContext()
             }
         }

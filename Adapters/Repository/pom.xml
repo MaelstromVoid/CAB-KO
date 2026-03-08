@@ -6,7 +6,6 @@
 
     <name>3 - Repository</name>
     <artifactId>cabko-repository</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <parent>
@@ -69,7 +68,7 @@
             <plugin>
                 <groupId>io.fabric8</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
-                <version>0.46.0</version>
+                <version>0.48.1</version>
                 <executions>
                     <execution>
                         <id>start-postgres</id>
@@ -117,7 +116,6 @@
             <plugin>
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-maven-plugin</artifactId>
-                <version>${flyway.version}</version>
                 <configuration>
                     <driver>${db.driver}</driver>
                     <url>${db.url}</url>
@@ -163,7 +161,6 @@
             <plugin>
                 <groupId>org.jooq</groupId>
                 <artifactId>jooq-codegen-maven</artifactId>
-                <version>${jooq.version}</version>
                 <executions>
                     <execution>
                         <id>generate-jooq</id>
@@ -209,7 +206,6 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>build-helper-maven-plugin</artifactId>
-                <version>${build-helper-maven-plugin.version}</version>
                 <executions>
                     <execution>
                         <id>add-generated-jooq-source</id>

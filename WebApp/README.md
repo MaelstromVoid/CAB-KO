@@ -8,7 +8,7 @@ application. This module is tightly coupled with Spring Boot and Spring Security
 
 ## Features
 
-Spring Boot Integration: Bootstraps the application using Spring Boot's auto-configuration and embedded server
+Spring Boot Integration: Bootstraps the application using Spring Boot's autoconfiguration and embedded server
 capabilities.
 
 Security Configuration: Integrates Spring Security for authentication and authorization mechanisms.

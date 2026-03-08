@@ -1,9 +1,9 @@
 package cabko.usecase.products
 
 import cabko.repository.ProductRepository
+import cabko.technical.ProductNotFound
 import cabko.technical.TransactionalHandler
 import cabko.technical.UseCase
-import common.error.ProductNotFound
 import common.identity.ProductID
 import core.users.model.AuthenticatedUser
 import core.users.service.ActionAuthorizationService

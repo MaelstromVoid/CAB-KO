@@ -12,9 +12,9 @@ import org.springframework.stereotype.Repository
 @Repository
 class JooqUserRepository(private val jooq: DSLContext) : UserRepository {
 
-    override fun findByUsername(username: String): User? {
+    override fun findByEmail(email: String): User? {
         val record = jooq.selectFrom(USERS)
-            .where(USERS.EMAIL.eq(username))
+            .where(USERS.EMAIL.eq(email))
             .fetchOne() ?: return null
 
         return User(

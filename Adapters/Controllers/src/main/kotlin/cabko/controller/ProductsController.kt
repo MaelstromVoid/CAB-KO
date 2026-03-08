@@ -25,7 +25,7 @@ import java.util.UUID
 
 @RestController
 @RequestMapping("/api/products")
-class ProductController(
+class ProductsController(
     private val addProductUseCase: AddProductUseCase,
     private val deleteProductUseCase: DeleteProductUseCase,
     private val decrementProductStockUseCase: DecrementProductStockUseCase,

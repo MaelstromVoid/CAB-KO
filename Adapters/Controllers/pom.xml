@@ -6,7 +6,6 @@
 
     <name>5 - Controllers</name>
     <artifactId>cabko-controllers</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <parent>
